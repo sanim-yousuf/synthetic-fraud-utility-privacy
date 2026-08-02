@@ -1,0 +1,7 @@
+dataset,attack,auc
+ULB (n=344),diffusion_loss_based,0.913301382778127
+ULB (n=344),diffusion_nn_distance,0.5484266970458831
+ULB (n=344),ctgan_nn_distance,0.49959734443746073
+IEEE-CIS (n=4000),diffusion_loss_based,0.5238033854166666
+IEEE-CIS (n=4000),diffusion_nn_distance,0.5022328125
+IEEE-CIS (n=4000),ctgan_nn_distance,0.5062092708333333

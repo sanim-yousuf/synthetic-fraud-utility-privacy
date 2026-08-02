@@ -1,0 +1,7 @@
+{
+  "mia_results": {
+    "diffusion_loss_based": 0.5238033854166666,
+    "diffusion_nn_distance": 0.5022328125,
+    "ctgan_nn_distance": 0.5062092708333333
+  }
+}

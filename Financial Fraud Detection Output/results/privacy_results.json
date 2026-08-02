@@ -1,0 +1,33 @@
+{
+  "mia_results": {
+    "diffusion_loss_based": 0.913301382778127,
+    "diffusion_nn_distance": 0.5484266970458831,
+    "ctgan_nn_distance": 0.49959734443746073
+  },
+  "dp_sweep_results": [
+    {
+      "noise_multiplier": 0.5,
+      "epsilon": 311.71511387889376,
+      "utility_f1": 0.8172043010752689,
+      "mia_auc": 0.5559396605908233
+    },
+    {
+      "noise_multiplier": 1.0,
+      "epsilon": 63.95553251314482,
+      "utility_f1": 0.8172043010752689,
+      "mia_auc": 0.5375746385920804
+    },
+    {
+      "noise_multiplier": 2.0,
+      "epsilon": 19.985118753314584,
+      "utility_f1": 0.8158844765342961,
+      "mia_auc": 0.5261038654934004
+    },
+    {
+      "noise_multiplier": 4.0,
+      "epsilon": 7.911450641958998,
+      "utility_f1": 0.8401486988847584,
+      "mia_auc": 0.522725487115022
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "stages": [
+    {
+      "label": "CTGAN training -- ULB",
+      "seconds": 17.882067680358887
+    },
+    {
+      "label": "Diffusion training -- ULB",
+      "seconds": 102.52813529968262
+    },
+    {
+      "label": "ULB classifier eval -- Stage 1 screening (3 seeds x full ratio grid)",
+      "seconds": 7934.967531204224
+    },
+    {
+      "label": "ULB classifier eval -- Stage 2 confirmation (7 more seeds x best ratio only)",
+      "seconds": 4222.548462629318
+    },
+    {
+      "label": "DP-SGD sweep (4 noise multipliers)",
+      "seconds": 250.111563205719
+    },
+    {
+      "label": "DP-SGD same-architecture confirmation (nm=4.0)",
+      "seconds": 79.02927660942078
+    },
+    {
+      "label": "Diffusion training -- IEEE-CIS",
+      "seconds": 366.5025897026062
+    },
+    {
+      "label": "CTGAN training -- IEEE-CIS",
+      "seconds": 263.35422372817993
+    },
+    {
+      "label": "Classifier evaluation grid -- IEEE-CIS (3 seeds)",
+      "seconds": 874.767560005188
+    }
+  ],
+  "total_wall_clock_seconds": 14198.312049150467
+}
