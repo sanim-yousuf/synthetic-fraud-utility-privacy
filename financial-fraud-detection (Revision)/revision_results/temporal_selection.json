@@ -1,0 +1,23 @@
+{
+  "ratio": {
+    "adasyn|XGBoost": 0.5,
+    "ctgan|XGBoost": 10.0,
+    "diffusion|XGBoost": 0.5,
+    "none|XGBoost": 0.0,
+    "ros|XGBoost": 1.0,
+    "smote|XGBoost": 10.0
+  },
+  "threshold": {
+    "adasyn|XGBoost": 0.6118678897619247,
+    "ctgan|XGBoost": 0.8787214457988739,
+    "diffusion|XGBoost": 0.6453629732131958,
+    "none|XGBoost": 0.6729662716388702,
+    "ros|XGBoost": 0.6091747879981995,
+    "smote|XGBoost": 0.7101533114910126
+  },
+  "primary_classifier": "XGBoost",
+  "n_fit": 159492,
+  "n_fit_fraud": 356,
+  "n_val": 39873,
+  "n_val_fraud": 28
+}

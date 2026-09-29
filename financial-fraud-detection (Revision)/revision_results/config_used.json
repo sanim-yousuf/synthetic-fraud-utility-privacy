@@ -1,0 +1,187 @@
+{
+  "RUN_MODE": "full_paper",
+  "CONFIG": {
+    "seed": 42,
+    "test_size": 0.3,
+    "val_size": 0.2,
+    "augmentation_ratios": [
+      0.5,
+      1.0,
+      2.0,
+      5.0,
+      10.0
+    ],
+    "screen_seeds": [
+      0,
+      1,
+      2
+    ],
+    "confirm_seeds": [
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109
+    ],
+    "diffusion": {
+      "timesteps": 200,
+      "beta_start": 0.0001,
+      "beta_end": 0.02,
+      "hidden_dim": 256,
+      "t_dim": 128,
+      "n_blocks": 4,
+      "lr": 0.001,
+      "batch_size": 64,
+      "ema_decay": 0.995,
+      "max_epochs": 3000,
+      "min_epochs": 800,
+      "rel_tol": 0.02,
+      "loss_repeats": 20
+    },
+    "ctgan": {
+      "epochs": 100,
+      "batch_size": 500,
+      "embedding_dim": 128,
+      "generator_dim": [
+        256,
+        256
+      ],
+      "discriminator_dim": [
+        256,
+        256
+      ],
+      "generator_lr": 0.0002,
+      "discriminator_lr": 0.0002,
+      "generator_decay": 1e-06,
+      "discriminator_decay": 1e-06,
+      "discriminator_steps": 1,
+      "pac": 10
+    },
+    "resampling": {
+      "k_neighbors": 5,
+      "maj_ref_size": 20000
+    },
+    "classifiers": {
+      "lr_max_iter": 2000,
+      "lr_C": 1.0,
+      "rf_n_estimators": 100,
+      "rf_max_depth": 8,
+      "rf_min_samples_leaf": 5,
+      "xgb_n_estimators": 100,
+      "xgb_max_depth": 6,
+      "xgb_learning_rate": 0.1,
+      "xgb_subsample": 0.8,
+      "xgb_colsample_bytree": 0.8,
+      "mlp_hidden": [
+        64,
+        32
+      ],
+      "mlp_epochs": 30,
+      "mlp_batch_size": 2048,
+      "mlp_lr": 0.001,
+      "decision_threshold": 0.5
+    },
+    "mia": {
+      "nn_k": [
+        1,
+        5
+      ],
+      "fixed_ref_size": 5000,
+      "n_boot": 1000,
+      "n_perm": 2000
+    },
+    "dp": {
+      "noise_multipliers": [
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "max_grad_norm": 1.0,
+      "delta": 1e-05,
+      "epochs": 250,
+      "seeds": [
+        200,
+        201,
+        202,
+        203,
+        204
+      ],
+      "light_hidden_dim": 64,
+      "light_t_dim": 32,
+      "light_n_blocks": 2
+    },
+    "scale": {
+      "n_list": [
+        344,
+        1000,
+        2000,
+        4000
+      ],
+      "seeds": [
+        300,
+        301,
+        302
+      ],
+      "max_epochs": 2250,
+      "checkpoints": [
+        100,
+        250,
+        500,
+        1000,
+        1500,
+        2250
+      ],
+      "eval_every": 25,
+      "patience": 10,
+      "heldout_min_epochs": 100,
+      "n_val_frauds_ieee": 1000,
+      "ulb_val_share": 0.2,
+      "rule_window": 150,
+      "rule_min_epochs": 800
+    },
+    "ieee": {
+      "max_majority_train": 30000,
+      "max_minority_train": 4000,
+      "missing_threshold": 0.5,
+      "ratios": [
+        0.5,
+        1.0,
+        2.0,
+        5.0
+      ],
+      "screen_seeds": [
+        0,
+        1
+      ],
+      "confirm_seeds": [
+        100,
+        101,
+        102,
+        103,
+        104
+      ],
+      "max_epochs": 1500,
+      "min_epochs": 500
+    },
+    "temporal": {
+      "screen_seeds": [
+        0,
+        1
+      ],
+      "confirm_seeds": [
+        400,
+        401,
+        402,
+        403,
+        404
+      ]
+    },
+    "max_total_runtime_hours": 11.0
+  }
+}

@@ -1,0 +1,6 @@
+Dataset,Training frauds n,Non-members,Training-loss rule: AUC,Training-loss rule: epoch,Held-out-loss early stopping: AUC,Held-out-loss early stopping: epoch,Fixed 2250 epochs: AUC,Seeds
+IEEE-CIS,344,2400,0.739 ± 0.010,2100 ± 212,0.630 ± 0.039,392 ± 236,0.737 ± 0.011,3
+IEEE-CIS,1000,2400,0.613 ± 0.004,1900 ± 87,0.605 ± 0.003,1333 ± 123,0.621 ± 0.001,3
+IEEE-CIS,2000,2400,0.556 ± 0.008,1750 ± 87,0.556 ± 0.014,1717 ± 772,0.560 ± 0.008,3
+IEEE-CIS,4000,2400,0.526 ± 0.001,1450 ± 87,0.527 ± 0.001,1908 ± 311,0.528 ± 0.001,3
+ULB,275,148,0.927 ± 0.006,1750 ± 229,0.754 ± 0.024,183 ± 38,0.933 ± 0.001,3

@@ -1,0 +1,52 @@
+{
+  "stages": [
+    {
+      "label": "ulb selection stage",
+      "seconds": 6068.662834882736,
+      "run_mode": "full_paper",
+      "device": "cuda"
+    },
+    {
+      "label": "ulb confirmation stage + privacy audit",
+      "seconds": 6702.984868764877,
+      "run_mode": "full_paper",
+      "device": "cuda"
+    },
+    {
+      "label": "DP-SGD sweep (both architectures, non-DP references)",
+      "seconds": 1260.7821152210236,
+      "run_mode": "full_paper",
+      "device": "cuda"
+    },
+    {
+      "label": "Part D: data scale and training length",
+      "seconds": 5722.08398103714,
+      "run_mode": "full_paper",
+      "device": "cuda"
+    },
+    {
+      "label": "ieee selection stage",
+      "seconds": 1749.965744972229,
+      "run_mode": "full_paper",
+      "device": "cuda"
+    },
+    {
+      "label": "ieee confirmation stage + privacy audit",
+      "seconds": 3659.632105112076,
+      "run_mode": "full_paper",
+      "device": "cuda"
+    },
+    {
+      "label": "temporal selection stage",
+      "seconds": 226.13981223106384,
+      "run_mode": "full_paper",
+      "device": "cuda"
+    },
+    {
+      "label": "temporal confirmation stage + privacy audit",
+      "seconds": 500.1566700935364,
+      "run_mode": "full_paper",
+      "device": "cuda"
+    }
+  ]
+}

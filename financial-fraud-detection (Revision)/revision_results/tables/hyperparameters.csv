@@ -1,0 +1,16 @@
+Component,Item,Setting
+Diffusion,Noise schedule,"linear, T = 200, β from 0.0001 to 0.02"
+Diffusion,Denoiser,"residual MLP, width 256, 4 blocks, time embedding 128, LayerNorm, SiLU"
+Diffusion,Optimiser,"Adam, learning rate 0.001, batch size 64, EMA decay 0.995"
+Diffusion,Stopping rule (Eq. 7),"window w = max(20, cap/20), tolerance 0.02, floor 800 (ULB) / 500 (IEEE-CIS), cap 3000 / 1500"
+Diffusion,Loss attack,"20 (t, ε) draws per record"
+CTGAN,Architecture,"embedding 128, generator (256, 256), discriminator (256, 256), pac 10"
+CTGAN,Training,"100 epochs, batch 500, Adam lr 0.0002 (both), weight decay 1e-06"
+SMOTE / ADASYN,Neighbours,"k = 5, real majority reference of 20,000 records"
+Logistic regression,Settings,"L2, C = 1.0, lbfgs, max_iter 2000"
+Random forest,Settings,"100 trees, max depth 8, min samples per leaf 5"
+XGBoost,Settings,"100 trees, depth 6, learning rate 0.1, subsample 0.8, column subsample 0.8"
+MLP,Settings,"hidden (64, 32), ReLU, Adam lr 0.001, 30 epochs, batch 2048, pos_weight = n_neg/n_pos"
+All classifiers,Decision threshold,0.5 (fixed) and the validation-tuned threshold
+DP-SGD,Settings,"clip C = 1.0, δ = 1e-05, σ ∈ [0.5, 1.0, 2.0, 4.0], 250 epochs, Poisson sampling, RDP accountant"
+Protocol,Seeds,ULB: 3 selection + 10 confirmation; IEEE-CIS: 2 + 5; DP: 5; scale study: 3

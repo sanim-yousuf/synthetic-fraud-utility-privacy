@@ -1,0 +1,19 @@
+{
+  "ULB_n_total": 284807,
+  "ULB_n_fraud": 492,
+  "ULB_n_features": 30,
+  "ULB_train_fraud": 344,
+  "ULB_test_fraud": 148,
+  "ULB_train_legit": 199020,
+  "ULB_test_legit": 85295,
+  "IEEE_n_total": 590540,
+  "IEEE_n_fraud": 20663,
+  "IEEE_n_features": 209,
+  "IEEE_train_fraud": 4000,
+  "IEEE_train_legit": 30000,
+  "IEEE_test_fraud": 2400,
+  "IEEE_test_legit": 18000,
+  "IEEE_es_fraud": 1000,
+  "TEMP_train_fraud": 384,
+  "TEMP_test_fraud": 108
+}

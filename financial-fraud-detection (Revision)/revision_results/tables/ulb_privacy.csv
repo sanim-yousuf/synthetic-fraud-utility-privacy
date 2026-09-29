@@ -1,0 +1,13 @@
+Method,Released artefact,Attack,AUC mean ± SD,95% CI,Exact copies of members,Seeds
+Diffusion (DDPM),Generator (white-box),Loss,0.919 ± 0.003,0.881–0.950,n/a,10
+ROS,Synthetic set (344 records),Nearest neighbour (k=1),0.812 ± 0.010,0.786–0.836,65.1%,10
+SMOTE,"Synthetic set (1,720 records)",Nearest neighbour (k=1),0.917 ± 0.006,0.885–0.944,4.3%,10
+ADASYN,Synthetic set (172 records),Nearest neighbour (k=1),0.517 ± 0.006,0.465–0.570,1.2%,10
+CTGAN,"Synthetic set (3,440 records)",Nearest neighbour (k=1),0.508 ± 0.014,0.459–0.556,0.0%,10
+Diffusion (DDPM),Synthetic set (172 records),Nearest neighbour (k=1),0.518 ± 0.005,0.467–0.570,0.0%,10
+No augmentation,Classifier (XGBoost),Confidence (classifier-level),0.583 ± 0.016,0.528–0.636,n/a,10
+ROS,Classifier (XGBoost),Confidence (classifier-level),0.634 ± 0.007,0.582–0.685,n/a,10
+SMOTE,Classifier (XGBoost),Confidence (classifier-level),0.610 ± 0.012,0.560–0.659,n/a,10
+ADASYN,Classifier (XGBoost),Confidence (classifier-level),0.605 ± 0.012,0.550–0.658,n/a,10
+CTGAN,Classifier (XGBoost),Confidence (classifier-level),0.601 ± 0.014,0.551–0.649,n/a,10
+Diffusion (DDPM),Classifier (XGBoost),Confidence (classifier-level),0.607 ± 0.008,0.554–0.658,n/a,10
